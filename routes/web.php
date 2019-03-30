@@ -15,4 +15,13 @@
 //     return view('welcome');
 // });
 
+
+ Route::get('/construcao', function () {
+     return view('welcome');     
+ });
+
+  Route::get('/login', function () {
+     return view('paginaLogin');     
+ });
+ 
 Route::get('/',['uses' => 'Controller@homepage']); //define qual será a pagina inicial

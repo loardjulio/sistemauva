@@ -8,12 +8,9 @@
         <meta name="description" content="Sistema para U.V.A Energia">
         <meta name="author" content="JUCE SISTEMAS">
 
-        <title>UVA - Energia solar</title>
-
-
+        <title>UVA Energia</title>
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
         <!-- Custom fonts for this template -->
         <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -26,15 +23,12 @@
         <link href="css/animacao.css.css" rel="stylesheet">
         <!--script preencher cidade por estado -->
         <script language="JavaScript" type="text/javascript" src="js/cidades-estados-1.4-utf8.js"></script>
-
     </head>
 
     <body id="page-top">
-
         
         <!-- Header -->
-        <header class="masthead">
-            
+        <header class="masthead">           
             
             
              <!-- Navigation -->
@@ -42,7 +36,7 @@
             <div class="container">
                 <!--   <a class="navbar-brand js-scroll-trigger"  href="#page-top">UVA - ENERGIA SOLAR</a>-->
                 <a href="#">
-                    <img class="navbar-brand js-scroll-trigger" src="img/logos/uva-Logo.png" alt="">
+                    <img class="navbar-brand js-scroll-trigger" src="img/logos/UVA BRANCO-SEMFUNDO.png" alt="">
                 </a>
 
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,13 +60,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-
-            
-            
-            
-            
-            
+        </nav>            
             
             <div class="container">
                 <div class="intro-text">
@@ -131,8 +119,6 @@
                       </div>
 
         </section>
-
-
         <!--  Passo a passo -->
         <section id="etapas">
             <div class="container">
@@ -385,10 +371,10 @@
                                 <a href="#">Quem somos</a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#">Trabalhe conosco</a>
+                                <a href="{{ url('/construcao') }}">Trabalhe conosco</a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#">Área restrita</a>
+                                <a href="{{ url('/login') }}">Área restrita</a>
                             </li>
                         </ul>
                     </div>
