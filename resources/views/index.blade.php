@@ -9,7 +9,7 @@
         <meta name="author" content="JUCE SISTEMAS">
         <link rel="icon" type="image/png" href="img/icons/iconuva.ico"/>
 
-        <title>UVA Energia</title>
+        <title>UVA | Energia</title>
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom fonts for this template -->
@@ -52,6 +52,9 @@
                             <li class="nav-item">
                                 <a class="nav-link js-scroll-trigger" href="#portfolio">Energia Solar</a>
                             </li>
+                             <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="{{ url('/sobre') }}">Sobre nós</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link js-scroll-trigger" href="#etapas">Passo a passo</a>
                             </li>
@@ -67,12 +70,9 @@
             </nav>            
 
             <div class="container">
-
-
                 <div class="intro-text">
-<!--                                        <div class="intro-lead-in ">Acredite no poder do sol</div>-->
-                                        <div class="intro-heading text-uppercase">UVA É</div>
-
+                    <!--                                        <div class="intro-lead-in ">Acredite no poder do sol</div>-->
+                    <div class="intro-heading text-uppercase">UVA É</div>
                     <div class="intro-heading text-uppercase" id="content">
                         <div class="intro-heading text-uppercase" id="visible">
 <!--                            <p class="intro-heading text-uppercase" id="p">UVA É: </p>-->
@@ -84,18 +84,10 @@
                             </ul>
                         </div>
                     </div>
-
-
                     <!--                    <div class="intro-lead-in">Limpa e sustentável!</div>-->
-
-
-                    <a class="btn btn-warning btn-xl text-uppercase js-scroll-trigger" href="#simulacao">Simular agora!</a>
-
+                    <a class="btn btn-warning btn-xl text-uppercase js-scroll-trigger" href="#etapas">Quero produzir energia!</a>
                 </div>
-            </div>
-        </div>
-
-
+            </div>        
     </header>
 
     <!-- Energia Solar -->
@@ -110,7 +102,7 @@
         <br>
 
         <div class="row">
-            <div class="col-md-4 col-sm-6 portfolio-item">
+            <div class="col-md-4 col-sm-4 portfolio-item">
                 <a class="portfolio-link" data-toggle="modal">
                     <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
                 </a>
@@ -143,9 +135,11 @@
 
 
             </div>
-
+            </div>
     </section>
 
+      
+    
     <!--  Passo a passo -->
     <section id="etapas">
         <div class="container">
@@ -263,6 +257,8 @@
 
     <!-- Simulação -->
     <section class="bg-light" id="simulacao">
+           
+        
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -321,6 +317,45 @@
     </section>
 
 
+    
+    <section class="intro-text">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 col-sm-4 col-xs-12 wow bounceInUp">
+                    <div class="single_address">
+                        <i class="fa fa-map-marker"></i>
+                        <h4>UVA ENERGIA</h4>
+                        <p>Av. Nelci Gonçalves de Simas, 591, Centro<br>
+                             Naviraí - MS - CEP 79.950-000</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-4 col-xs-12 wow bounceInUp" >
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <h4>Telefone</h4>
+                        <p>(55) 67 3461 2278 / 67 99999999</p>
+                        
+                    </div>
+                </div>
+               
+                
+                <div class="col-md-4 col-sm-4 col-xs-12 wow bounceInUp">
+                    <div>
+                        <i class="fa fa-envelope-square"></i>
+                        <h4>Email</h4>
+                        <p>contato@uvaenergia.com.br</p>
+                        
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
     <!-- Contato -->
     <section id="contact">
         <div class="container">
@@ -346,22 +381,21 @@
                                     <input class="form-control" id="phone" type="tel" placeholder="Seu telefone *" required="required" data-validation-required-message="Ops! Insira seu telefone.">
                                     <p class="help-block text-danger"></p>
                                 </div>
-                                
-                                <div class="form-group">
-                                    <textarea class="form-control" id="message" placeholder="Escreva aqui *" required="required" data-validation-required-message="Por favor, digite sua mensagem."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                
-                                
+
+                              
+
                             </div>
-                            
+
                             <div class="col-md-6">
-                                <div class="form-group">
+
+                                 <div class="form-group">
                                     <textarea class="form-control" id="message" placeholder="Escreva aqui *" required="required" data-validation-required-message="Por favor, digite sua mensagem."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
+
+
                             </div>
-                            
+
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
@@ -370,9 +404,11 @@
                         </div>
                     </form>
                 </div>
-            </div>
+            </div>          
+            
         </div>
     </section>
+    
 
     <!-- Footer -->
     <footer class="site-footer">
@@ -404,10 +440,10 @@
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
                         <li class="list-inline-item">
-                            <a href="#">Quem somos</a>
+                            <a href="{{ url('/sobre') }}">Quem somos</a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="{{ url('/construcao') }}">Trabalhe conosco</a>
+                            <a href="{{ url('/vagas') }}">Trabalhe conosco</a>
                         </li>
                         <li class="list-inline-item">
                             <a href="{{ url('/login') }}">Área restrita</a>

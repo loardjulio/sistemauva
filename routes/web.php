@@ -16,12 +16,17 @@
 // });
 
 
- Route::get('/construcao', function () {
-     return view('welcome');     
+ Route::get('/vagas', function () {
+     return view('trabalheConosco');     
  });
 
   Route::get('/login', function () {
      return view('paginaLogin');     
  });
+ 
+  Route::get('/sobre', function () {
+     return view('quemSomos');     
+ });
+  
  
 Route::get('/',['uses' => 'Controller@homepage']); //define qual será a pagina inicial
